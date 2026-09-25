@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="awesome_clicker.SystrayDropdown">
+        <Dropdown>
+            <t t-set-slot="default">🍪 <ClickValue value="clicker.clicks"/> 🌳 <t t-esc="clicker.getTotalTrees()"/></t>
+            <t t-set-slot="content">
+                <DropdownItem>Clicks: <ClickValue value="clicker.clicks"/></DropdownItem>
+                <DropdownItem>Pear: <t t-esc="clicker.fruits.pear"/></DropdownItem>
+                <DropdownItem onSelected="() => this.env.services.action.doAction({type:'ir.actions.client', tag:'awesome_clicker.client_action', target:'new'})">Open Game</DropdownItem>
+            </t>
+        </Dropdown>
+    </t>
+</templates>

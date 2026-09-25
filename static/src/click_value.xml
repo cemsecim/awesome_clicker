@@ -1,0 +1,7 @@
+<templates>
+    <t t-name="awesome_clicker.ClickValue">
+        <span t-att-data-tooltip="props.value.toString()" class="o_clicker_value">
+            <t t-esc="humanized" />
+        </span>
+    </t>
+</templates>
