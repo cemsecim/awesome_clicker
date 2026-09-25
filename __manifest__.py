@@ -3,7 +3,7 @@
     "version": "1.0",
     "application": False,  # veya True yapsan da olur, App listesinde çıkması için
     "depends": ["web"],
-    "author": "Adın",
+    "author": "Cem Seçim",
     "assets": {
         "web.assets_backend": [
             "awesome_clicker/static/src/utils.js",
